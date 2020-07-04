@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags-->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Title Page-->
+		<title>Au Register Forms by Colorlib</title>
+		<!-- Icons font CSS-->
+		<link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+		<link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+		<!-- Font special for pages-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+		<!-- Vendor CSS-->
+		<link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+		<link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+		<!-- Main CSS-->
+		<link href="css/main.css" rel="stylesheet" media="all">
+		<style>
+			.detail-custom{
+				text-align: center;
+				padding-top: 40px;
+				margin-bottom: -20px;
+				font-size: 1.2em;
+			}
+			.email-custom{
+				color: #888;
+			}
+			.padding-custom{
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-bottom: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page-wrapper bg-gra-02 p-t-30 p-b-30 font-poppins padding-custom">
+			<div class="wrapper wrapper--w680">
+				<img src="logo.png" width="200px">
+				<br/><br/>
+				<div class="card card-4">
+					<div class="card-body">
+						<h2 class="title">Email Order Form</h2>
+						<form method="get" action="https://docs.google.com/forms/d/e/1FAIpQLSdZh0BH6SKboJD1Y-lGZDjDO7I66rYJT3nPSSfUqXPM-3D4RA/viewform?usp=pp_url">
+							
+									<div class="input-group">
+										<label class="label">full name</label>
+										<input class="input--style-4" type="text" name="entry.675230857" required>
+									</div>
+							
+							<div class="row row-space">
+								<div class="col-2">
+									<div class="input-group">
+										
+										<label class="label">username</label>
+										<input class="input--style-4" type="text" id="myInput" name="entry.1965877327" required>
+										
+									</div>
+								</div>
+								<div class="col-2">
+									<div class="input-group">
+										<label class="label">Domain</label>
+										<div class="rs-select2 js-select-simple select--no-search">
+											<select name="entry.406925025" id="domainselect">
+												<option value="@neko.my.id (Most popular)">@neko.my.id</option>
+												<option value="@nhent.ai (New)">@nhent.ai</option>
+												<option value="@vtuber.nu (New)">@vtuber.nu</option>
+												<option value="@palletes.co (New)" disabled>@palletes.co</option>
+												<option value="@mydevs.co (New)" disabled>@mydevs.co</option>
+												<option value="@japanmail.co (New)" disabled>@japanmail.co</option>
+												<option value="@kreati.xyz (New)">@kreati.xyz</option>
+												<option value="@drivebase.xyz (New)">@drivebase.xyz</option>
+												<option value="@anime.direct (New) (?)">@anime.direct</option>
+											</select>
+											<div class="select-dropdown"></div>
+										</div>
+									</div></div>
+								</div>
+								
+								
+								
+								
+								<div class="p-t-15">
+									<button class="btn btn--radius-2 btn--blue" type="submit">Next</button>
+								</div>
+							</form>
+							<div class="detail-custom">
+								<span class="email-custom">Your email gonna be </span><span id="result">username</span><span id="domainselected" value="0">@neko.my.id</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Jquery JS-->
+			<script src="vendor/jquery/jquery.min.js"></script>
+			<!-- Vendor JS-->
+			<script src="vendor/select2/select2.min.js"></script>
+			<script src="vendor/datepicker/moment.min.js"></script>
+			<!-- Main JS-->
+			<script src="js/global.js"></script>
+			<script>
+				//InputGetter
+			$(document).ready(function(){
+			$("#myInput").on("input", function(){
+			// Print entered value in a div box
+			$("#result").text($(this).val());
+			});
+			});
+
+			$("#domainselect").change(function() {
+			$("#domainselected").text($(this).find("option:selected").text());
+			
+			});
+			</script>
+			</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+		</html>
+		<!-- end document-->
