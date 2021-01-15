@@ -1,0 +1,8 @@
+Semua user harus memenuhi kebijakan garansi saat memakai jasa ini.
+
+1. Garansi berlaku 2 bulan, berlaku dari hari pembelian dan bisa di redeem menggunakan email google form yang dikirim ke email pribadi mu.
+2. Garansi tidak berlaku full refund uang, melainkan di gantikan akun baru jika kesalahan ada di admin/server.
+3. Garansi tidak berlaku jika user melanggar terms and condition dari google drive.
+4. Garansi tidak berlaku jika masalah yang terkena dari gsuite, tapi jika sebelum 2 bulan dan gsuite mendapat masalah.. akan di refund uangnya sampai 80% tergantung seberapa lama user memegang akun itu.
+
+Ini bisa berubah kapan saja tanpa pemberitahuan lebih dulu. Pastikan untuk cek secara berkala.
